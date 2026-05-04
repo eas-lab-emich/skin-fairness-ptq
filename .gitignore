@@ -1,0 +1,62 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+env/
+build/
+dist/
+*.egg-info/
+
+# Vendored upstream — installed automatically by run.sh from
+# https://github.com/KeyKy/distiller.git (do not commit)
+distiller/
+
+# External dependency installed locally
+nn_dataflow/
+
+# Datasets (Stanford-gated; not redistributable)
+data/
+fitzpatrick17k_data/
+fitzpatrick17k.csv
+fitzpatrick17k.zip
+ham10000_data/
+*.tar.gz
+
+# Trained checkpoints (large binary assets)
+backend/skin_checkpoints/
+backend/_archive/
+*.pth
+*.pth.tar
+
+# Search / training run artifacts
+backend/results/
+search/results/
+scripts/logs/
+backend/tools/logs/
+logs/
+results/run_*/
+nsga2_*/
+greedy_ud_constrained_*/
+uniform_sweep_*/
+
+# Result artifacts (large) — small curated ones live in results/ and ARE tracked
+*.csv
+!results/results_summary.csv
+!results/*.csv
+*.json
+!results/*.json
+
+# Editor / OS
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Notebooks scratch
+.ipynb_checkpoints/

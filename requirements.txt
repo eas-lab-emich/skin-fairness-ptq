@@ -1,0 +1,20 @@
+# Core
+torch
+torchvision
+numpy
+pandas
+Pillow
+scikit-learn
+
+# Multi-objective search
+pymoo>=0.6.0
+
+# Excel I/O
+openpyxl
+
+# Upstream Distiller (cloned and patched by run.sh from
+# https://github.com/KeyKy/distiller.git into ./distiller). Not pip-installable.
+
+# Energy simulation: nn_dataflow (Stanford). Install separately:
+#   git clone https://github.com/stanford-mast/nn_dataflow.git
+# See README.md "Energy simulation" for required source patches.
